@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background: #e5eafb;
+  color: #292D32;
+
+  ul, li, a {
+    all: unset;
+  }
+}
+.base-content {
+  display: flex;
+}
+.sidebar-content
+{
+  padding: 38px 28px 0 28px;
+  background: #FFF;
+  height: 100vh;
+}
+.header-logo
+{
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.26px;
+  transition: transform 1s ease;
+  .site-title{
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-left: 10px;
+  }
+}
+.header-logo:hover
+{
+  transform: scale(1.1);
+  color: #B5B7C0;
+}
+.lower-index
+{
+  color: #838383;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+}
+// === Sidebar main ===
+.navigation-menu-sidebar
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 66px;
+  gap: 40px;
+}
+li.menu-item
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3ms ease;
+  a {
+    display: flex;
+  }
+
+  p {
+    color: #9197B3;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: -0.14px;
+  }
+}
+li.menu-item:hover
+{
+  width: 250px;
+  background: #5932EA;
+  height: 46px;
+  border-radius: 8px;
+  padding: 11px;
+  stroke: white;
+}
+.menu-item:hover p {
+  color: #fff; /* Змініть на ваш потрібний колір */
+}
+.link-items {
+  display: flex;
+  gap: 14px;
+}
+
+// === MAIN ===
+.main-content {
+  width: 100%;
+}
