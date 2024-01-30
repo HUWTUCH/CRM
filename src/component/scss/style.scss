@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import "respons.scss";
 *{
   padding: 0;
   margin: 0;
@@ -6,6 +7,7 @@
 }
 body
 {
+  height: 100%;
   background: #e5eafb;
   color: #292D32;
 
@@ -20,8 +22,10 @@ body
 {
   padding: 38px 28px 0 28px;
   background: #FFF;
-  height: 100vh;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
 .header-logo
 {
   font-family: Poppins;
@@ -84,22 +88,31 @@ li.menu-item
 }
 li.menu-item:hover
 {
-  width: 250px;
   background: #5932EA;
-  height: 46px;
   border-radius: 8px;
   padding: 11px;
-  stroke: white;
 }
 .menu-item:hover p {
-  color: #fff; /* Змініть на ваш потрібний колір */
+  color: #fff;
 }
 .link-items {
   display: flex;
   gap: 14px;
 }
-
+footer.footer-content
+{
+  display: flex;
+  margin-top: 100%;
+  background: #000;
+}
 // === MAIN ===
-.main-content {
+.main-content-center {
+  font-family: Poppins;
   width: 100%;
+  p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+  }
 }
